@@ -37,3 +37,5 @@ input:hover {
 }
 
 html,body { overflow: hidden }
+
+a {font-size: 2em; position: relative; right: 0px; }
