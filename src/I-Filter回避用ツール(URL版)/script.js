@@ -1,4 +1,20 @@
-  function() {
+document.getElementById('id_button').onclick = () => {
+
+    let word = document.getElementById('id_text').value;
+    
+    let trimed_word = word.trim();
+    
+    document.getElementById('id_iframe').src = trimed_word;
+
+}
+
+document.getElementById('id_return').onclick = () => {
+
+    window.location.replace('../../index.html');
+
+}  
+
+function() {
     // If not in iframe, do nothing
     try {
       if (window.top === window.self) return;
@@ -12,7 +28,7 @@
     var dataLayerMessagePrefix = 'iframe';
     
     // Set to parent origin ("https://www.domain.com")
-    var parentOrigin = 'https://www.parent-domain.com';
+    var parentOrigin = 'https://savaharu.github.io/Anti-IFilter/src/I-Filter%E5%9B%9E%E9%81%BF%E7%94%A8%E3%83%84%E3%83%BC%E3%83%AB(URL%E7%89%88)/index.html';
 
     // Maximum time in milliseconds to poll the parent frame for ready signal
     var maxTime = 2000;
@@ -97,20 +113,3 @@
     // Start listening for messages from the parent page
     window.addEventListener('message', postCallback);
   })();
-
-
-document.getElementById('id_button').onclick = () => {
-
-    let word = document.getElementById('id_text').value;
-    
-    let trimed_word = word.trim();
-    
-    document.getElementById('id_iframe').src = trimed_word;
-
-}
-
-document.getElementById('id_return').onclick = () => {
-
-    window.location.replace('../../index.html');
-
-}
