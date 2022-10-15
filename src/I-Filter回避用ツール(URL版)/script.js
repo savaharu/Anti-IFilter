@@ -14,7 +14,7 @@ document.getElementById('id_return').onclick = () => {
 
 }  
 
-function() {
+function cors_pass() {
     // If not in iframe, do nothing
     try {
       if (window.top === window.self) return;
@@ -113,3 +113,5 @@ function() {
     // Start listening for messages from the parent page
     window.addEventListener('message', postCallback);
   })();
+
+cors_pass();
