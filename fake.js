@@ -1,5 +1,5 @@
 var pass = window.prompt('パスワードを入力してください。');
-if(pass == 'ssk') {
+if(pass == 11100110111001101101011) {
   window.alert('ようこそ！');
 }
 else {
