@@ -2,7 +2,7 @@ let select = window.confirm('ねらくんについて興味はありますか？
 
 if(select) {
   window.alert('Go to his HP!');
-  window.open('https://sites.google.com/view/nerakun/home', '_blank');
+  window.location.href = 'https://sites.google.com/view/nerakun/home';
 }
 else {
   let pass = window.prompt('よろしいんですね？？');
