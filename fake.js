@@ -8,5 +8,8 @@ else {
   let pass = window.prompt('よろしいんですね？？');
   
   if(pass == '三角関数') window.alert('ようこそ！');
-  else window.alert('問答無用！ｗｗｗ');
+  else {
+    window.alert('問答無用！ｗｗｗ');
+    window.location.href = 'https://sites.google.com/view/nerakun/home';
+  }
 }
