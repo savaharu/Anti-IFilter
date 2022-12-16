@@ -4,5 +4,5 @@ document.getElementById('id_return').onclick = () => {
 
 }
 
-let pass = winndow.prompt('”パスワードを入力してください。”');
+let pass = window.prompt('”パスワードを入力してください。”');
 if(pass == 'パスワード') window.alert('ようこそ！');
