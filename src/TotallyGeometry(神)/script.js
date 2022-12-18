@@ -6,7 +6,7 @@ document.getElementById('id_return').onclick = () => {
 
 }
 
-for(!isCorrectPass) {
+while(!isCorrectPass) {
     let pass = window.prompt('”パスワードを入力してください。”');
     if(pass == 'パスワード') {isCorrectPass = true; window.alert('ようこそ！');}
 }
